@@ -24,4 +24,4 @@ The necessary steps to make the program work:</br>
 
 **The program was developed using python 3.11.0**
 
-In order to run the program, run main.py.
+In order to run the program, run main.py. 
