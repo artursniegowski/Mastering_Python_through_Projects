@@ -1,5 +1,5 @@
 # 01_Morse_Code_Converter
-This is a Python scrypting project for a text-based Morse converter.
+This is a Python scrypting project - a text-based Morse converter.
 Morse code is a way of encoding text characters as standardized sequences of two different signal durations, called dots and dashes, and named after Samuel Morse, one of the inventors of the telegraph.
 You can read more [here](https://en.wikipedia.org/wiki/Morse_code).</br>
 This programme was developed based on the OOP (object-oriented programming) methodology.
