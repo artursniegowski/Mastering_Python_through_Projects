@@ -9,7 +9,7 @@ The user will be faced with three options:</br>
 - 'q' - quitting the program.</br>
 
 ---
-
+ 
 The necessary steps to make the program work:</br>
 1. Install the Python version as stated in runtime.txt (python-3.11.0)</br>
 
