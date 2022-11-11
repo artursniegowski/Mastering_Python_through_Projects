@@ -8,7 +8,7 @@ The user will be faced with three options:</br>
 - 'decode': after choosing this option, the user will have to provide a morse code text that will be decoded (the decoded message will be outputed),</br>
 - 'q' - quitting the program.</br>
 
----
+--- 
  
 The necessary steps to make the program work:</br>
 1. Install the Python version as stated in runtime.txt (python-3.11.0)</br>
