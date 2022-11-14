@@ -12,3 +12,4 @@ The user will be faced with three options:</br>
 - 'encode': after choosing this option, the user will have to provide a text that will be encoded to morse code (the end result),</br>
 - 'decode': after choosing this option, the user will have to provide a morse code text that will be decoded (the decoded message will be outputed),</br>
 - 'q' - quitting the program.</br>
+ 
