@@ -25,7 +25,7 @@ The necessary steps to make the program work:</br>
 ![Screenshot](docs/img/03_pic.png)</br>
 
 
-![Screenshot](docs/img/04_pic.png)</br>
+![Screenshot](docs/img/04_pic.png)</br> 
 
 ---
 
