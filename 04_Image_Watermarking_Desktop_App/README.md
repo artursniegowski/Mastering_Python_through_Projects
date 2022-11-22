@@ -1,7 +1,7 @@
 # 04_Image_Watermarking_Desktop_App
 
 This is a desktop application that makes it possible to add watermarks to uploaded pictures.
-Watermakr is a pattern that appears as various shades of lightness or darkness to help identify the picture.
+Watermark is a pattern that appears as various shades of lightness or darkness to help identify the picture.
 This app was developed using Python and Tkinter for creating a graphical user interface.
 It will make it possible to add a logo to any image you want. It's basically like an image editing software like Photoshop for adding the watermark, or like an online service like https://watermarkly.com/. </br>
 
