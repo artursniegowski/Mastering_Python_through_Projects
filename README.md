@@ -23,3 +23,9 @@ The user gets to choose whether to play against another human player or a comput
 In the game, two players take turns and place an "X" or "O" in a three-by-three grid. The player who succeeds first in placing three of the same marks in a horizontal, vertical, or diagonal row is the winner. There are in total nine moves the players can make, and if, by placing the last mark on the grid, no one wins, it will be a draw (out of moves). The first game is always started by Player 1 (X), but they always take turns, so when the second game begins, it could be either Player 1 (X) or Player 2 (O), depending on who ended the previous game. The program was developed using the Object Oriented methodology.</br>
 Can you beat the computer player??</br>
 Have fun playing! 
+
+## 04_Image_Watermarking_Desktop_App
+This is a desktop application that makes it possible to add watermarks to uploaded pictures.
+Watermakr is a pattern that appears as various shades of lightness or darkness to help identify the picture.
+This app was developed using Python and Tkinter for creating a graphical user interface.
+It will make it possible to add a logo to any image you want. It's basically like an image editing software like Photoshop for adding the watermark, or like an online service like https://watermarkly.com/. </br>
