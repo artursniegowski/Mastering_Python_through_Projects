@@ -5,7 +5,7 @@ The user gets to choose whether to play against another human player or a comput
 In the game, two players take turns and place an "X" or "O" in a three-by-three grid. The player who succeeds first in placing three of the same marks in a horizontal, vertical, or diagonal row is the winner. There are in total nine moves the players can make, and if, by placing the last mark on the grid, no one wins, it will be a draw (out of moves). The first game is always started by Player 1 (X), but they always take turns, so when the second game begins, it could be either Player 1 (X) or Player 2 (O), depending on who ended the previous game. The program was developed using the Object Oriented methodology.</br>
 Can you beat the computer player??</br>
 Have fun playing!  
-
+ 
 ---
 
 The necessary steps to make the program work:</br>
