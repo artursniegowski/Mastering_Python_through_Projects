@@ -21,7 +21,7 @@ There is validation implemented for the X, Y, and ANGLE inputs; this means that 
 4. After adding the watermark, we have to save the picture. It will be saved under the folder /img in the same directory as the file main.py. The program will also automatically add to the filename a watermarked text to indicate that the picture was saved with the watermark. The program will also determine if there is already a file with the same name; if so, it will add in brackets a number starting with 1 and going all the way up until it finds a name that does not exist. After the picture with the watermark is saved, it will
 disable the "Add Watermark" and "Save" buttons and also change the view of the main frame to default, which is blank space. And the process of adding another image and watermark can start over. 
 
-
+ 
 ---
 
 useful links:</br>
