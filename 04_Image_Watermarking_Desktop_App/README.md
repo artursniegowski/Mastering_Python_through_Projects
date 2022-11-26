@@ -1,5 +1,5 @@
 # 04_Image_Watermarking_Desktop_App
-
+ 
 This is a desktop application that makes it possible to add watermarks to uploaded pictures.
 Watermark is a pattern that appears as various shades of lightness or darkness to help identify the picture.
 This app was developed using Python and Tkinter for creating a graphical user interface.
