@@ -29,3 +29,16 @@ This is a desktop application that makes it possible to add watermarks to upload
 Watermark is a pattern that appears as various shades of lightness or darkness to help identify the picture.
 This app was developed using Python and Tkinter for creating a graphical user interface.
 It will make it possible to add a logo to any image you want. It's basically like an image editing software like Photoshop for adding the watermark, or like an online service like https://watermarkly.com/. </br>
+
+## 05_Typing_Speed_Test_Desktop_App
+This desktop application was developed using Python 3.11 and Tkinter for creating a graphical user interface.
+The main purpose of this application is to assess the typing speed of the user.
+The average typing speed is 40 words per minute. But with practice, you can speed up to 100 words per minute.
+It is similar to the online typing-speed-test app: https://typing-speed-test.aoeu.eu/.
+How does it work? The user is given some sample text as words, and the user has to start typing them down one by one.
+The timer starts counting down from 60 seconds when the user starts typing the first word.
+When the timer hits 0, it stops, the user input will be disabled, and the user can check how many words per second (WPS) and how many characters per second (CPS) was it possible for the user to type in a minute.
+Each time the user hits the space bar or the enter key, the app will compare the input word with the sample word that was supposed to be typed.
+If the user typed the word correctly, it will be highlighted in green, and if the user typed the word incorrectly, it will be highlighted in red.
+The current word to be typed will have a green tag around it.
+The user can restart the program by pressing the Restart button at any time.
