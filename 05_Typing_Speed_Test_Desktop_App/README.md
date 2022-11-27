@@ -10,7 +10,7 @@ When the timer hits 0, it stops, the user input will be disabled, and the user c
 Each time the user hits the space bar or the enter key, the app will compare the input word with the sample word that was supposed to be typed.
 If the user typed the word correctly, it will be highlighted in green, and if the user typed the word incorrectly, it will be highlighted in red.
 The current word to be typed will have a green tag around it.
-The user can restart the program by pressing the Restart button at any time.
+The user can restart the program by pressing the Restart button at any time. 
 
 
 ---
