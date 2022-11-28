@@ -37,7 +37,7 @@ The necessary steps to make the program work:</br>
 ![Screenshot](docs/img/04_image.png)</br>
 
 </br>
-
+ 
 ---
 
 **The program was developed using python 3.11.0 and Tkinter**
