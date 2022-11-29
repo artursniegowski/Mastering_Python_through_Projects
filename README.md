@@ -42,3 +42,10 @@ Each time the user hits the space bar or the enter key, the app will compare the
 If the user typed the word correctly, it will be highlighted in green, and if the user typed the word incorrectly, it will be highlighted in red.
 The current word to be typed will have a green tag around it.
 The user can restart the program by pressing the Restart button at any time.
+
+## 06_Breakout_arcade_game
+This is a recreation of the famous game Breakout, which was a hit game originally coded up by Steve Wozniak before he and Jobs started Apple.
+You can read more about the original game here: https://en.wikipedia.org/wiki/Breakout_(video_game)
+It was developed using Python 3.11 and Turtle graphics. The main aim of the game is to use the ball and paddle to break down the wall.
+The user will start with three lives, and every time the ball misses the paddle, the user will lose one. If the player runs out of lives, the game is over. The aim is to make sure the ball bounces off the paddle and breaks as many blocks as possible. If all the blocks are broken,
+The whole layout will be reloaded, but your score will keep going. Try to achieve the highest score! 
