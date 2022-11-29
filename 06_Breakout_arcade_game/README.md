@@ -34,6 +34,6 @@ The necessary steps to make the program work:</br>
 
 ---
 
-**The program was developed using python 3.11.0 and Turtle graphics**
+**The program was developed using python 3.11.0 and Turtle graphics.**
 
 In order to run the program, run main.py.
