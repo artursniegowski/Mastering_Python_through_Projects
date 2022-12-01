@@ -29,7 +29,7 @@ The necessary steps to make the program work:</br>
 ![Screenshot](docs/img/03_view.png)</br>
 ![Screenshot](docs/img/04_view.png)</br>
 ![Screenshot](docs/img/05_view.png)</br>
-
+ 
 </br>
 
 ---
