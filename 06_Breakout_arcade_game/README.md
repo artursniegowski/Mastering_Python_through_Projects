@@ -4,7 +4,7 @@ This is a recreation of the famous game Breakout, which was a hit game originall
 You can read more about the original game here: https://en.wikipedia.org/wiki/Breakout_(video_game)
 It was developed using Python 3.11 and Turtle graphics. The main aim of the game is to use the ball and paddle to break down the wall.
 The user will start with three lives, and every time the ball misses the paddle, the user will lose one. If the player runs out of lives, the game is over. The aim is to make sure the ball bounces off the paddle and breaks as many blocks as possible. If all the blocks are broken,
-The whole layout will be reloaded, but your score will keep going. Try to achieve the highest score! 
+The whole layout will be reloaded, but your score will keep going. In order to move the paddle, use the keyboard keys "a" for left and "d" for right. Try to achieve the highest score! 
 
 ---
 
