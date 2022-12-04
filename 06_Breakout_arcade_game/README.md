@@ -8,7 +8,7 @@ The whole layout will be reloaded, but your score will keep going. In order to m
  
 ---
 
-useful links:</br>
+useful links:</br> 
 
 Turtle
 https://docs.python.org/3/library/turtle.html
