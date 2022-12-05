@@ -13,7 +13,7 @@ The main features are:</br>
 - a multi-page website with an interactive side bar. </br>
 - fully mobile responsive with an adaptive side bar.</br>
 - customised error handling-403-page Forbidden.</br>
-- customised error handling-404-page not found.</br> 
+- customised error handling-404-page not found.</br>
 - customised error handling-405 Method Not Allowed.</br> 
 
 
@@ -22,7 +22,7 @@ The data is stored in two different tables using an SQLite database (if launched
 
 The main page consists of a list of cafes with the option to open a Google link to them or to delete the cafe (only visible and accessible if the user is logged in). Users who are not logged in and try to add a cafe will get redirected to the login website, where they can either log in with their credentials or create a new account. After creating an account, the user will be automatically logged in. A notification will always appear at the top of the screen, enhancing the user experience (flash message visible for one session only). Flask flash messaging was implemented to give feedback to the user if the email address is incorrect, like if it already exists in the database, or if the email address does not exist and the user tries to login, or if the password was wrong, or when a cafe will be added, or if the cafe name already exists in the database.
 
- 
+
 Each user who wants to be authenticated needs to register. After registering, the users' data will be stored securely in the database. Afterwards, the user can simply log in to the Cafe Wifi website.
 When the user gets registered, the email address, user name, and hashed password with salt are stored in the database in the users table. This website shows how authentication is done with the use of Flask and Flask-login while maintaining the highest level of security by hashing the user passwords, adding salt to them, and then storing the hash in the database instead of the password itself. Every user who is logged in can always log out.
 
