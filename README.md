@@ -49,3 +49,21 @@ You can read more about the original game here: https://en.wikipedia.org/wiki/Br
 It was developed using Python 3.11 and Turtle graphics. The main aim of the game is to use the ball and paddle to break down the wall.
 The user will start with three lives, and every time the ball misses the paddle, the user will lose one. If the player runs out of lives, the game is over. The aim is to make sure the ball bounces off the paddle and breaks as many blocks as possible. If all the blocks are broken,
 The whole layout will be reloaded, but your score will keep going. Try to achieve the highest score! 
+
+
+## 07_Cafe_and_Wifi_Website
+
+This is a fully-fledged website that is mobile-responsive. It lists cafes where users can explore some interesting facts about them; it will show how work- or study-friendly they are based on such factors as WiFi access, toilet access, electrical sockets, the option of taking calls, seating, and coffee price. This website stores the data in a SQLite database in two tables. One table will include all of the cafes, while the other will include all of the users. There is a one-to-many relationship between a user (the creator of the cafe on the website) and a cafe. There are two different users: one is authenticated (logged in), and the other is anonymous (not logged in). Only authenticated users will be able to delete and add cafes to the website's database. The Cafe Wifi website was developed using the Python framework Flask, JavaScript, and HTML, and the styling was done with CSS and Bootstrap 5.2.</br>
+The main features are:</br>
+- RESTful website: Authenticated users will be able to add new cafes and delete existing cafes from the database (via Flask HTTP requests and forms WTF and AJAX JavaScript) on the Cafe Wifi website. Only authenticated users will have those rights. Unauthenticated users will only be able to browse the website. </br>
+- User authentication for the website and assigning different permissions based on their status. There will be 2 groups that are distinguished: logged-in users and anonymous users (not logged in). </br>
+- passwords that have been hashed and salted are saved in the database.</br>
+- all cafe and user data will be stored in a SQLite database and managed using Flask-SQLAlchemy.</br>
+- use of Gravatar images to provide an avatar image for website users.</br>
+- making use of relational databases (one-to-many relationships). </br>
+- message flashing using Flask Flash to give feedback to the user. They will be visible only for one session. </br>
+- a multi-page website with an interactive side bar. </br>
+- fully mobile responsive with an adaptive side bar.</br>
+- customised error handling-403-page Forbidden.</br>
+- customised error handling-404-page not found.</br> 
+- customised error handling-405 Method Not Allowed.</br> 
