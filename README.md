@@ -65,5 +65,5 @@ The main features are:</br>
 - a multi-page website with an interactive side bar. </br>
 - fully mobile responsive with an adaptive side bar.</br>
 - customised error handling-403-page Forbidden.</br>
-- customised error handling-404-page not found.</br> 
+- customised error handling-404-page not found.</br>
 - customised error handling-405 Method Not Allowed.</br> 
