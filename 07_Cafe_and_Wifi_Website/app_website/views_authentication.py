@@ -89,9 +89,6 @@ def login() -> Response | str:
         # if user exists
         if user_trying_to_login:
             
-            print(user_trying_to_login)
-            print(user_trying_to_login.password)
-
             # checking if password matches the server password
             if check_password_hash(user_trying_to_login.password, login_form.password.data):
                 
