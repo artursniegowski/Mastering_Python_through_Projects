@@ -19,7 +19,7 @@ The main features are:</br>
 
 The data is stored in two different tables using an SQLite database (if launched locally) managed with the help of Flask-SQLAlchemy. Between these two tables, there exists a database relationship "A one to many," which makes it easy to locate all the cafes that were created by a certain user. The Cafe Wifi website can perform POST, GET, and DELETE HTTP requests in order to create, retrieve, or delete cafes or users from the database.
 
-
+ 
 The main page consists of a list of cafes with the option to open a Google link to them or to delete the cafe (only visible and accessible if the user is logged in). Users who are not logged in and try to add a cafe will get redirected to the login website, where they can either log in with their credentials or create a new account. After creating an account, the user will be automatically logged in. A notification will always appear at the top of the screen, enhancing the user experience (flash message visible for one session only). Flask flash messaging was implemented to give feedback to the user if the email address is incorrect, like if it already exists in the database, or if the email address does not exist and the user tries to login, or if the password was wrong, or when a cafe will be added, or if the cafe name already exists in the database.
 
 
