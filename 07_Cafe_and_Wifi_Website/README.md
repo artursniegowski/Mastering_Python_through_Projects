@@ -147,7 +147,7 @@ I recommend using the SQLite browser to explore the data currently saved in the 
 ![Screenshot](docs/img/image8.png)</br>
 
 ---
-
+ 
 ***Log in view.***</br>
 ![Screenshot](docs/img/image9.png)</br>
 
