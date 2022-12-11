@@ -14,8 +14,8 @@ The main features are:</br>
 - fully mobile responsive with an adaptive nav bar.</br>
 - customised error handling-401-Unauthorized.</br>
 - customised error handling-403-page Forbidden.</br>
-- customised error handling-404-page not found.</br> 
-- customised error handling-405 Method Not Allowed.</br> 
+- customised error handling-404-page not found.</br>
+- customised error handling-405 Method Not Allowed.</br>
 
 
 The data is stored in three different tables using an SQLite database (if launched locally) managed with the help of Flask-SQLAlchemy. Between these three tables, there exists a database relationship "A one to many," which makes it easy to locate all the to-do lists
