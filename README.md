@@ -50,9 +50,7 @@ It was developed using Python 3.11 and Turtle graphics. The main aim of the game
 The user will start with three lives, and every time the ball misses the paddle, the user will lose one. If the player runs out of lives, the game is over. The aim is to make sure the ball bounces off the paddle and breaks as many blocks as possible. If all the blocks are broken,
 The whole layout will be reloaded, but your score will keep going. Try to achieve the highest score! 
 
-
 ## 07_Cafe_and_Wifi_Website
-
 This is a fully-fledged website that is mobile-responsive. It lists cafes where users can explore some interesting facts about them; it will show how work- or study-friendly they are based on such factors as WiFi access, toilet access, electrical sockets, the option of taking calls, seating, and coffee price. This website stores the data in a SQLite database in two tables. One table will include all of the cafes, while the other will include all of the users. There is a one-to-many relationship between a user (the creator of the cafe on the website) and a cafe. There are two different users: one is authenticated (logged in), and the other is anonymous (not logged in). Only authenticated users will be able to delete and add cafes to the website's database. The Cafe Wifi website was developed using the Python framework Flask, JavaScript, and HTML, and the styling was done with CSS and Bootstrap 5.2.</br>
 The main features are:</br>
 - RESTful website: Authenticated users will be able to add new cafes and delete existing cafes from the database (via Flask HTTP requests and forms WTF and AJAX JavaScript) on the Cafe Wifi website. Only authenticated users will have those rights. Unauthenticated users will only be able to browse the website. </br>
@@ -66,4 +64,22 @@ The main features are:</br>
 - fully mobile responsive with an adaptive side bar.</br>
 - customised error handling-403-page Forbidden.</br>
 - customised error handling-404-page not found.</br>
+- customised error handling-405 Method Not Allowed.</br> 
+
+## 08_ToDo_List_Website
+This is a fully functional to-do list website. where the user needs to create an account and login in order to use it.
+After that, each account will be allowed to create to-do lists where various tasks can be added and, upon completion, marked as done and crossed out. This website makes it possible to keep track of your to-do tasks. To-do lists offer a way to increase productivity by stopping you from forgetting things, helping you prioritize tasks, managing tasks effectively, using your time wisely, and improving time management as well as workflow. This website was built with Python, Flask, SQLite (a one-to-many database), HTML, CSS, JavaScript, and Bootstrap 5.2.</br>
+The main features are:</br>
+- RESTful website: Authenticated users will be able to add / update / delete - ToDo lists and tasks from the database (via Flask HTTP requests and forms WTF and AJAX JavaScript) on the ToDo List website. Only authenticated users will have those rights.</br>
+- a AJAX PATCH request (with JavaScript).</br>
+- User authentication for the website and assigning different permissions based on their status. There will be 2 groups that are distinguished: logged-in users and anonymous users (not logged in). </br>
+- passwords that have been hashed and salted are saved in the database.</br>
+- all data will be stored in a SQLite database and managed using Flask-SQLAlchemy.</br>
+- making use of relational databases (one-to-many relationships) and cascade deletion. </br>
+- message flashing using Flask Flash to give feedback to the user. They will be visible only for one session. </br>
+- a multi-page website with an interactive nav bar. </br>
+- fully mobile responsive with an adaptive nav bar.</br>
+- customised error handling-401-Unauthorized.</br>
+- customised error handling-403-page Forbidden.</br>
+- customised error handling-404-page not found.</br> 
 - customised error handling-405 Method Not Allowed.</br> 
