@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}{{super()}} - Log in{% endblock %}
+
+{% block content %}
+<div class="container-fluid login-form">
+    <h3 class="header-login">Log in to create, save, and access your lists.</h3>
+    <form method="POST">
+        {{ form.csrf_token }}
+        
+        <div class="row">
+            {{ form.username.label(class_='col-form-label') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.username }} 
+            </div>
+            {% for error in form.username.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {{ form.password.label(class_='col-form-label') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.password }} 
+            </div>
+            {% for error in form.password.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+        </div>
+
+        {{form.submit}}
+        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+    </form>
+    <p>New to ToDo Lists?
+        <a class="sign-up-link-login" href="{{ url_for('register') }}">Sign up here to save your lists.</a>
+    </p>
+</div>
+{% endblock %}

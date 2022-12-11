@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid text-center px-5">
+    {% with current_url = url_for(request.endpoint, **request.view_args) %}
+    <h2 class="add-margin-round-20">
+        {% if url_for('create_list') in current_url %}Create{% else %}Edit{% endif %} your ToDo list below
+    </h2>
+    <hr>
+    <form method="POST">
+        {{ form.csrf_token }}
+        
+        <div class="row row-cols-1 justify-content-center">
+            {{ form.title.label(class_='col-form-label form-label-title-size') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.title }} 
+            </div>
+            {% for error in form.title.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+            <div class="col py-3">
+                {% if url_for('create_list') in current_url %}
+                    {{form.submit(value='Create')}}
+                {% else %}
+                    {{form.submit(value='Change')}}
+                {% endif %}
+            </div>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+    </form>
+  {% endwith %}
+</div>
+{% endblock %}
