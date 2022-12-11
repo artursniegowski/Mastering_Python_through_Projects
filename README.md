@@ -68,7 +68,7 @@ The main features are:</br>
 
 ## 08_ToDo_List_Website
 This is a fully functional to-do list website. where the user needs to create an account and login in order to use it.
-After that, each account will be allowed to create to-do lists where various tasks can be added and, upon completion, marked as done and crossed out. This website makes it possible to keep track of your to-do tasks. To-do lists offer a way to increase productivity by stopping you from forgetting things, helping you prioritize tasks, managing tasks effectively, using your time wisely, and improving time management as well as workflow. This website was built with Python, Flask, SQLite (a one-to-many database), HTML, CSS, JavaScript, and Bootstrap 5.2.</br>
+After that, each account will be allowed to create to-do lists where various tasks can be added and, upon completion, marked as done and crossed out. This website makes it possible to keep track of your to-do tasks. To-do lists offer a way to increase productivity by stopping you from forgetting things, helping you prioritize tasks, managing tasks effectively, using your time wisely, and improving time management as well as workflow. This website was built with Python, Flask, SQLite database (a one-to-many relationship), HTML, CSS, JavaScript, and Bootstrap 5.2.</br>
 The main features are:</br>
 - RESTful website: Authenticated users will be able to add / update / delete - ToDo lists and tasks from the database (via Flask HTTP requests and forms WTF and AJAX JavaScript) on the ToDo List website. Only authenticated users will have those rights.</br>
 - a AJAX PATCH request (with JavaScript).</br>
