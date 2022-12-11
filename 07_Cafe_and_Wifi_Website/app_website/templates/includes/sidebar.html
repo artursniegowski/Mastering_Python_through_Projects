@@ -1,0 +1,45 @@
+<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" id="sidebarElementJS">
+    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-4 text-white min-vh-100">
+        <a href="{{ url_for('index')}}" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Café And Wifi</span>
+        </a>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+                <a href="{{ url_for('index')}}" class="nav-link align-middle px-0">
+                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('add_cafe')}}" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-plus-circle"></i> <span class="ms-1 d-none d-sm-inline">Add Café</span></a>
+            </li>
+            {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a href="{{ url_for('logout')}}" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-box-arrow-left"></i> <span class="ms-1 d-none d-sm-inline">Log Out</span></a>
+                </li>
+                <li class="nav-item py-5">  
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="{{ current_user.email | gravatar }}" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">{{ current_user.username }}</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href="{{ url_for('login')}}" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-box-arrow-in-right"></i> <span class="ms-1 d-none d-sm-inline">Log In</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('register')}}" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-person-add"></i> <span class="ms-1 d-none d-sm-inline">Register</span></a>
+                </li>
+            {% endif %}
+        </ul>
+        <hr>
+        <div class="pb-5">
+            <div class="d-flex align-items-center coppy-rigth-text">
+                <span>Café & Wifi &copy;{{current_year}}</span>
+            </div>
+        </div>
+    </div>
+</div>

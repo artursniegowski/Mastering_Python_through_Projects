@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %}{{super()}} - Add{% endblock %}
+
+{% block content %}
+<div class="bg-dark d-flex justify-content-center py-4 px-2 m-0">
+    <h3 class="text-white text-center">
+        Add Café
+    </h3>
+</div>
+<div class="container p-5">
+    <div class="mx-auto col col-md-9">
+        <p class="d-flex justify-content-center px-2 fw-semibold">
+            Add the next Café!
+        </p>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="d-flex justify-content-center flash-message">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="d-flex justify-content-center pt-2 w-100">
+            <form method="POST" class="row g-3">
+                {{ form.csrf_token }}
+                
+                <div class="col-md-6">
+                    {{form.name.label(class_='form-label') }}
+                    {{form.name}}
+                    {% for error in form.name.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-md-6">
+                    {{form.location.label(class_='form-label') }}
+                    {{form.location }}
+                    {% for error in form.location.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{form.map_url.label(class_='form-label') }}
+                    {{form.map_url }}
+                    {% for error in form.map_url.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{form.img_url.label(class_='form-label') }}
+                    {{form.img_url }}
+                    {% for error in form.img_url.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-4">
+                    {{form.seats.label(class_='form-label') }}
+                    {{form.seats }}
+                    {% for error in form.seats.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-4">
+                    {{form.coffee_price.label(class_='form-label') }}
+                    {{form.coffee_price }}
+                    {% for error in form.coffee_price.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-4">
+                    {{form.price_currency.label(class_='form-label') }}
+                    {{form.price_currency }}
+                    {% for error in form.price_currency.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        {{form.has_sockets }}
+                        {{form.has_sockets.label(class_='form-check-label')}}
+                        {% for error in form.has_sockets.errors %}
+                        <div class="invalid-feedback-form">
+                            {{ error }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        {{form.has_toilet }}
+                        {{form.has_toilet.label(class_='form-check-label')}}
+                        {% for error in form.has_toilet.errors %}
+                        <div class="invalid-feedback-form">
+                            {{ error }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        {{form.has_wifi }}
+                        {{form.has_wifi.label(class_='form-check-label')}}
+                        {% for error in form.has_wifi.errors %}
+                        <div class="invalid-feedback-form">
+                            {{ error }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        {{form.can_take_calls }}
+                        {{form.can_take_calls.label(class_='form-check-label')}}
+                        {% for error in form.can_take_calls.errors %}
+                        <div class="invalid-feedback-form">
+                            {{ error }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-6 col-lg-4 mx-auto">
+                    {{form.submit}}
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+            </form>
+        </div>
+        <div class="d-flex justify-content-center pt-4 px-2">
+            <span class="fw-light ">
+                 <a href="{{ url_for('index')}}" class="text-decoration-none fw-semibold">
+                    See all Cafes
+                </a>
+            </span> 
+        </div>
+    </div>
+</div>
+{% endblock %}
