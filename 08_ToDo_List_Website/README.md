@@ -11,7 +11,7 @@ The main features are:</br>
 - making use of relational databases (one-to-many relationships) and cascade deletion. </br>
 - message flashing using Flask Flash to give feedback to the user. They will be visible only for one session. </br>
 - a multi-page website with an interactive nav bar. </br>
-- fully mobile responsive with an adaptive nav bar.</br>
+- fully mobile responsive with an adaptive nav bar.</br> 
 - customised error handling-401-Unauthorized.</br>
 - customised error handling-403-page Forbidden.</br>
 - customised error handling-404-page not found.</br>
