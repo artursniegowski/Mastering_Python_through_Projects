@@ -1,0 +1,33 @@
+<li class="list-group-item task-card-backgroud-color-{{ task.color_tag }}" >
+    <div class="row align-items-center">
+
+        <div class="col-auto">
+            <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}"/>
+            <div class="spinner-border text-primary d-none" role="status" id="taskCheckboxSpinner{{task.id}}">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <input id="taskCheckbox{{task.id}}" 
+                   class="form-check-input text-center check-box-done" 
+                   type="checkbox" aria-label="Done" 
+                   {% if task.done %}checked disabled{% endif %} 
+                   data-mark-url="{{url_for('check_the_task', list_id=task.todo_list_id, task_id=task.id)}}"
+                   data-redirect-url-next="{{url_for('detail_list', list_id=task.todo_list_id)}}"
+                   onclick="mark_it_done(this.id)">
+        </div>
+        <div class="col-auto">
+            <a class="card-anchor {% if task.done %}task-done-marking{% endif %}" href="{{ url_for('edit_task', list_id=task.todo_list_id, task_id=task.id ) }}">
+                <span>{{ task.task_name }}</span>
+            </a>
+            {% if task.stared and not task.done %}
+                <i class="bi bi-star-fill"></i>
+            {% endif %}
+        </div>
+        <div class="col-auto">
+            <span class="badge badge-styling-date {% if task.done %}task-done-marking-date{% endif %}">{{ task.due_date }}</span>
+        </div>
+         <div class="col text-end">
+            <a href="{{ url_for('edit_task', list_id=task.todo_list_id, task_id=task.id ) }}" type="button" class="btn btn-sm btn-outline-dark">edit</a>
+            <a href="{{ url_for('delete_task', list_id=task.todo_list_id, task_id=task.id ) }}" onclick="clicked_to_delete(event);" type="button" class="btn btn-sm btn-outline-danger">delete</a>
+         </div>
+    </div>
+ </li>

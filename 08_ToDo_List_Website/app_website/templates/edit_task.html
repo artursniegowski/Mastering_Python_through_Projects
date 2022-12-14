@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid text-center px-5">
+   <div class="row">
+      <div class="col">
+         <h2 class="add-margin-round-20">'{{current_task.task_name}}' in 
+            <a class="text-decoration-none" href="{{url_for('detail_list', list_id=current_list.id)}}">{{current_list.title}}</a>
+            list
+         </h2>
+      </div>
+   </div>
+   <hr>
+   <form method="POST">
+      {{ form.csrf_token }}
+      
+      <div class="row">
+
+         
+         <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.task_name.label(class_='col-form-label') }}
+                 {{ form.task_name }} 
+             </div>
+             {% for error in form.task_name.errors %}
+             <div class="invalid-feedback-form">
+                 {{ error }}
+             </div>
+             {% endfor %}
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-auto">
+               {{ form.color_tag.label(class_='col-form-label') }}
+               {{ form.color_tag }} 
+            </div>
+            {% for error in form.color_tag.errors %}
+            <div class="invalid-feedback-form">
+               {{ error }}
+            </div>
+            {% endfor %}
+            <div class="col-auto">
+               {{ form.due_date.label(class_='col-form-label') }}
+               {{ form.due_date }} 
+           </div>
+           {% for error in form.due_date.errors %}
+           <div class="invalid-feedback-form">
+               {{ error }}
+           </div>
+           {% endfor %}
+         </div>
+         <div class="row justify-content-center">
+
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-auto">
+               {{ form.stared.label(class_='col-form-label') }}
+                {{ form.stared }} 
+            </div>
+            {% for error in form.stared.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+               {{ form.done.label(class_='col-form-label') }}
+                {{ form.done }} 
+            </div>
+            {% for error in form.done.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+         </div>
+         <div class="row justify-content-center">
+          <div class="col py-3">
+               {{form.submit}}
+          </div>
+         </div>
+      </div>
+      <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+  </form>
+   
+</div>
+{% endblock %}

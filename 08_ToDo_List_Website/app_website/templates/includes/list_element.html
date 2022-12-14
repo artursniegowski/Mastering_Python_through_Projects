@@ -1,0 +1,22 @@
+<li class="list-group-item card-backgroud-color" >
+    <div class="row align-items-center">
+       <div class="col-auto">
+          <div class="d-inline-flex text-center">
+             <a class="card-anchor" href="{{ url_for('detail_list', list_id=todo_list.id ) }}">
+                <div class="d-flex flex-column">
+                   <span>{{ todo_list.title }}</span>
+                   <span class="text-date">{{ todo_list.date_created }}</span>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col">
+          <a href="{{ url_for('edit_list', list_id=todo_list.id ) }}" type="button" class="btn btn-sm btn-outline-dark">edit</a>
+          <a href="{{ url_for('detail_list', list_id=todo_list.id ) }}" type="button" class="btn btn-sm btn-outline-dark">View&nbsp;&raquo;</a>
+          <a href="{{ url_for('delete_list', list_id=todo_list.id ) }}" onclick="clicked_to_delete(event);" type="button" class="btn btn-sm btn-outline-danger">delete</a>
+       </div>
+       <div class="col-auto text-end">
+          <span class="badge badge-styling">{{ todo_list.tasks|unchecked_count }}</span>
+       </div>
+    </div>
+ </li>
