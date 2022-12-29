@@ -8,7 +8,10 @@ from sqlalchemy.orm import relationship
 # create the extension
 db = SQLAlchemy()
 # configure the SQLite database, relative to the app instance folder
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+# Upgrade SQLite Database to PostgreSQL - if env variable defined
+# otherwise the SQLite database will be used
+app.config['SQLALCHEMY_DATABASE_URI'] = POSTGRESQL_OR_SQLITE_DATABASE_URL
 # initialize the app with the extension
 db.init_app(app)
 
