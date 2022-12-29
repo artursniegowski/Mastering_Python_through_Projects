@@ -7,7 +7,7 @@ The main features are:</br>
 - a AJAX PATCH request (with JavaScript).</br>
 - User authentication for the website and assigning different permissions based on their status. There will be 2 groups that are distinguished: logged-in users and anonymous users (not logged in). </br>
 - passwords that have been hashed and salted are saved in the database.</br>
-- all data will be stored in a SQLite database and managed using Flask-SQLAlchemy. If env variable 'DATABASE_URL' is defined than the data can be stored in a PostgreSQL database.</br>
+- all data will be stored in a SQLite database and managed using Flask-SQLAlchemy. If env variable 'DATABASE_URL' is defined then the data can be stored in a PostgreSQL database.</br>
 - making use of relational databases (one-to-many relationships) and cascade deletion. </br>
 - message flashing using Flask Flash to give feedback to the user. They will be visible only for one session. </br>
 - a multi-page website with an interactive nav bar. </br>
@@ -106,7 +106,7 @@ The necessary steps to make the program work:</br>
 3. Change the name of .env.example to .env.</br>
 4. Define the Flask environmental variables in .env (https://flask.palletsprojects.com/en/2.2.x/config/#SECRET_KEY):</br>
 **FLASK_SECRET_KEY** = "your_secret_key_keep_it_secret"</br>
-5. You have the option of using the existing database (at this point, you will use SQLite) with defined users and lists or creating a new one (username adn password: admin1234).</br>
+5. You have the option of using the existing database (at this point, you will use SQLite) with defined users and lists or creating a new one (username and password: admin1234). If env variable 'DATABASE_URL' is defined then the data can be stored in a PostgreSQL database.</br>
 Alternatively, you can simply delete the database instance/data.db and then run run_main.py.
 A new, empty database will be created, and you will have to register the users and lists.</br>
 I recommend using the SQLite browser to explore the data currently saved in the database (there are three tables; users, to_do_list, task).</br>
