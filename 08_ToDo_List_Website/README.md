@@ -7,7 +7,7 @@ The main features are:</br>
 - a AJAX PATCH request (with JavaScript).</br>
 - User authentication for the website and assigning different permissions based on their status. There will be 2 groups that are distinguished: logged-in users and anonymous users (not logged in). </br>
 - passwords that have been hashed and salted are saved in the database.</br>
-- all data will be stored in a SQLite database and managed using Flask-SQLAlchemy.</br>
+- all data will be stored in a SQLite database and managed using Flask-SQLAlchemy. If env variable 'DATABASE_URL' is defined than the data can be stored in a PostgreSQL database.</br>
 - making use of relational databases (one-to-many relationships) and cascade deletion. </br>
 - message flashing using Flask Flash to give feedback to the user. They will be visible only for one session. </br>
 - a multi-page website with an interactive nav bar. </br>
