@@ -21,6 +21,6 @@ FLASK_PORT = int(os.environ.get('PORT',5000))
 # SQLAlchemy used to accept both, but has removed support for the postgres name.
 # for the DATABASE_URL - if defined the program can use PostgresSQL database
 # if not defined the progam will use SQLite databse !
-POSTGRESQL_OR_SQLITE_DATABASE_URL = os.environ.get("DATABASE_URL", 'sqlite:///blog.db')
+POSTGRESQL_OR_SQLITE_DATABASE_URL = os.environ.get("DATABASE_URL", 'sqlite:///data.db')
 if 'postgres://' in POSTGRESQL_OR_SQLITE_DATABASE_URL:
     POSTGRESQL_OR_SQLITE_DATABASE_URL = POSTGRESQL_OR_SQLITE_DATABASE_URL.replace('postgres://', 'postgresql://')
