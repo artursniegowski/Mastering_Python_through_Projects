@@ -1,6 +1,6 @@
 # Mastering_Python_through_Projects
 This is a repository of professional projects that can be used as ideas to further your Python skills and master this
-versatile scripting language. The repository will cover a wide range of projects like scripting Python projects (text-based), Web Development (Flask), Data Science (Pandas, Numpy, SciPy), GUI - graphical user interface (Tkinter), APIs (Requests), Games (Turtle), Web Scrapping (BeautifulSoup, Selenium), Automating Tasks with Python, and many more.
+versatile scripting language. The repository will cover a wide range of projects like scripting Python projects (text-based), Web Development (Flask), Data Science (Pandas, Numpy, SciPy), GUI - graphical user interface (Tkinter), APIs (Requests), Games (Turtle, Pygame), Web Scrapping (BeautifulSoup, Selenium), Automating Tasks with Python, and many more.
 
 
 ## 01_Morse_Code_Converter
