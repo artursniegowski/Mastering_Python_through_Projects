@@ -91,3 +91,19 @@ This desktop application was developed using Python 3.11 and Tkinter to create a
 This is an API-driven Python script that can take a PDF file and convert it into speech.
 If you are too tired to read, why not just have the pdf converted into an audio file like an MP3, which you can listen to on your way to
 work. This script effectively creates a free audiobook. This program was developed using Python 3.11, object oriented programming concepts, and an API (https://www.voicerss.org/api/) to convert the text file into audio. After running the program, the user must enter the name of the pdf file to be converted to an audiobook or press 'q' to exit. In the next step, the programme will look for that file in the 'pdf/' folder, and if it exists, it will first extract the text from the PDF file and then convert it into an audio file and save it in the same folder. This program has two main classes: one, that is responsible for extracting text from PDFs, and another that is responsible for the text -> audio conversion. This division makes it possible for customization that the user can easily implement. As in text extraction, the user can extract only a specific page rather than the entire file by specifying a parameter. And the API manager class gives the user the option to choose such parameters as language, speed of the voice, and format of the audio file. The OOP methodology gives the option of being easily extended by new parameters.
+
+## 11_Image_Color_Palette_Generator
+This is a website where the user can upload an image, and it will be processed on the backend side. The most common colors in that image will be extracted from it and listed under the picture with their hex values. This will make it easy to copy the colors if you want to use them in your project. A good example of this functionality can be found on this website: http://www.coolphptools.com/color_extract#demo. Because the website is static, no images are saved on the server; instead, after submitting the form, the file (picture) that the user chose to upload is stored in an in-memory bytes buffer using the buffered I/O implementation. This makes it possible to render images in the HTML without saving them on the server. The form can be submitted with the button RUN. The website was built with the Python web framework - Flask, and the image processing was done with NumPy and Pillow. The styling was done with HTML, CSS, JavaScript, and Bootstrap 5.3. This project is a great example of how to connect a data science task like image processing with a web framework like Flask.
+Other features:</br>
+- customized error messages were implemented to improve the user experience.</br>
+- customised error handling-401-Unauthorized.</br>
+- customised error handling-403-page Forbidden.</br>
+- customised error handling-404-page not found.</br>
+- customised error handling-405 Method Not Allowed</br>
+- mobile responsive with an adaptive nav bar</br>
+- using Jinja2 templating</br>
+- image processing using NumPy for identifying the most common colors in the picture</br>
+- the use of pillow librarary for image reading</br>
+- Buffered I/O implementation using an in-memory bytes buffer</br>
+- Directly displaying flask images to HTML without saving them as files on the server</br>
+- FileField validation (format and size)</br>
