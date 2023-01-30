@@ -1,0 +1,36 @@
+Table User as users {
+  id int [pk, increment]
+  username varchar [unique]
+  email varchar [unique]
+  password varchar(500)
+  
+  todo_lists List(ToDoList)
+}
+
+Table ToDoList {
+  id int [pk, increment]
+  title varchar(250)
+  date_created varchar(100)
+  
+  list_creator_id int
+  list_creator User
+  
+  tasks List(Task)
+}
+
+Table Task {
+  id int [pk, increment]
+  task_name varchar(250)
+  color_tag varchar(100)
+  due_date varchar(100)
+  done boolean
+  stared boolean
+  
+  todo_list_id int
+  tasks_todo_lists ToDoList
+}
+
+Ref: "User"."todo_lists" < "ToDoList"."list_creator"
+Ref: "User"."id" < "ToDoList"."list_creator_id"
+Ref: "ToDoList"."tasks" < "Task"."tasks_todo_lists"
+Ref: "ToDoList"."id" < "Task"."todo_list_id"

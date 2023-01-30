@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}{{super()}} - Sign up{% endblock %}
+
+{% block content %}
+<div class="container-fluid login-form">
+    <h3 class="header-login">Sign up to create, save, and access your lists.</h3>
+    <form method="POST">
+        {{ form.csrf_token }}
+        
+        <div class="row">
+            {{ form.username.label(class_='col-form-label') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.username }} 
+            </div>
+            {% for error in form.username.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {{ form.email.label(class_='col-form-label') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.email }} 
+            </div>
+            {% for error in form.email.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {{ form.password.label(class_='col-form-label') }}
+            <div class="col-md-6 col-lg-5 col-xxl-4">
+                {{ form.password }} 
+            </div>
+            {% for error in form.password.errors %}
+            <div class="invalid-feedback-form">
+                {{ error }}
+            </div>
+            {% endfor %}
+        </div>
+
+        {{form.submit}}
+        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+    </form>
+    <p>Already have an account?
+        <a class="sign-up-link-login" href="{{ url_for('login') }}">Sign in.</a>
+    </p>
+</div>
+{% endblock %}

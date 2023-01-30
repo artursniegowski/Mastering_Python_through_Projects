@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p class="flash-message">Message: {{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>

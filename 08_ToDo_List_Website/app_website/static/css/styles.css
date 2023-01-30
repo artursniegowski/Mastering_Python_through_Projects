@@ -1,0 +1,200 @@
+/* general */
+:root {
+    --bs-white: #fff;
+    --bs-grey: #868681;
+    --bs-grey-background: #ededed;
+    --bs-green-background: #C9FEC6;
+    --bs-red-background: #FBACAB;
+    --bs-green: #1eb760;
+    --bs-red: #fb3e51;
+}
+body {
+    font-family:'Montserrat', sans-serif;
+}
+/* navbar - header */
+.nav-link:hover {
+    color: var(--bs-white);
+}
+.navbar-brand:hover{
+    color: var(--bs-grey);
+}
+.logo-image{
+    filter: brightness(0) invert(1);
+}
+.header-top-padding {
+    padding: 0 5%;
+}
+/* flash messages */
+.flash-messages-section{
+    background-color: var(--bs-green);
+    border-bottom: 1px solid #178b49;
+}
+.flash-message{
+    margin: 0;
+    padding: 5px 5%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bs-white);
+}
+/* main content */
+.main-content{
+    padding: 30px 0;
+    min-height: 100vh;
+    background-color: var(--bs-grey-background);
+}
+.hero-title{
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 20px 0 30px 0;
+}
+.hero-text-decoration {
+    margin: 0 auto;
+}
+.hero-text{
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 0.875rem;
+}
+.hero-help-text{
+    color: var(--bs-green);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.button-hero-section{
+    margin: 40px 20px 10px 20px;
+}
+/* footer */
+.footer-bottom{
+    text-align: center;
+    color: var(--bs-white);
+    padding: 30px 0;
+}
+.footer-image {
+    padding: 5px;
+    color: var(--bs-white);
+}
+.footer-image:hover{
+    color: var(--bs-grey);
+}
+.footer-text{
+    font-size: 0.675rem;
+    padding-top: 5px;
+    margin: 0;
+}
+/* log in page */
+.button-submit-form{
+    margin: 25px 0;
+}
+.login-form{
+    padding: 40px;
+    text-align: left;
+}
+.invalid-feedback-form{
+    width: 100%; 
+    font-weight: bold;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--bs-red);
+}
+.header-login{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.sign-up-link-login{
+    text-decoration: none;
+}
+.sign-up-link-login:hover{
+    text-decoration: underline;
+}
+/* error page */
+.error-page-header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+.error-page{
+    padding-top: 100px;
+}
+/* mylists */
+.add-margin-round-20{
+    margin: 20px;
+}
+.card-backgroud-color{
+    background-color: var(--bs-grey-background);
+}
+.form-label-title-size{
+    font-size: 0.75rem;
+}
+.card-todo-list{
+    text-align: left;
+}
+.card-anchor {
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    /* padding: 0 1rem; */
+}
+.text-date{
+    font-size: 0.75rem;
+}
+.badge-styling{
+    background-color: var(--bs-grey);
+    font-weight: normal;
+    font-size: 1.0rem;
+    margin: 5px; 
+}
+.badge-styling-date{
+    background-color: var(--bs-grey);
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+.check-box-done{
+    font-size: 1.75rem;
+}
+/* tasks */
+.task-card-backgroud-color-none {
+    background-color: var(--bs-grey-background);
+}
+.task-card-backgroud-color-green {
+    background-color: var(--bs-green-background);
+}
+.task-card-backgroud-color-red {
+    background-color: var(--bs-red-background);
+}
+.font-size-checkbox-task{
+    font-size: 1.5rem;
+}
+.date-input{
+    display: inline-block;
+    width: auto;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    box-shadow: inherit;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.color-tag-input{
+    display: inline-block;
+    width: auto;
+}
+.task-done-marking{
+    text-decoration: line-through;
+    color: grey; 
+}
+.task-done-marking-date{
+    text-decoration-line: line-through;
+    text-decoration-color:  grey; 
+    text-decoration-thickness: 2px;
+}
+/* medai queries */
+@media (min-width:860px) {
+    .btn-size-adjust{
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.5rem; 
+    } 
+}
