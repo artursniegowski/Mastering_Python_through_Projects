@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid ">
+    <div class="card mx-auto card-background">
+        <h1 class="pb-2">Extracted from this picture</h1>
+        <img src="{{ img_src }}" class="card-img-top rounded" alt="image_to_extract_colors">
+        <div class="pt-3">
+            <h4 >Colors extracted</h4>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Color</th>
+                    <th scope="col">Color Code</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    {% for current_color in list_of_colors %}
+                        <tr>
+                            <td style="background-color: {{ current_color }};"></td>
+                            <td>{{ current_color }}</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="2">
+                                0 colors extracted from the picture!
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <form action="/" method="post" class="pt-4" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+                <div class="mb-3">
+                    {{ form.image_file.label(class_='form-label fw-bold') }}
+                    {{ form.image_file }}
+                    {% for error in form.image_file.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.submit }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
