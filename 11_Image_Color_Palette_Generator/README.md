@@ -68,25 +68,25 @@ The necessary steps to make the program work:</br>
 **Example views from the website:**</br>
 </br>
 
-***About page view. ***</br>
+***About page view.***</br>
 ![Screenshot](docs/img/01_img.png)</br>
 
 ---
 
 
-***Home page view - with the default picture and colors extracted. ***</br>
+***Home page view - with the default picture and colors extracted.***</br>
 ![Screenshot](docs/img/02_img.png)</br>
 
 ---
 
 
-***Home page view - after uploding another image and colors extracted. ***</br>
+***Home page view - after uploding another image and colors extracted.***</br>
 ![Screenshot](docs/img/03_img.png)</br>
 
 ---
 
 
-***Home page view - with a validation error after submitting a wrong format image. ***</br>
+***Home page view - with a validation error after submitting a wrong format image.***</br>
 ![Screenshot](docs/img/04_img.png)</br>
 
 ---
