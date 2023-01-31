@@ -3,7 +3,7 @@
 This is a website where the user can upload an image, and it will be processed on the backend side. The most common colors in that image will be extracted from it and listed under the picture with their hex values. This will make it easy to copy the colors if you want to use them in your project. A good example of this functionality can be found on this website: http://www.coolphptools.com/color_extract#demo. Because the website is static, no images are saved on the server; instead, after submitting the form, the file (picture) that the user chose to upload is stored in an in-memory bytes buffer using the buffered I/O implementation. This makes it possible to render images in the HTML without saving them on the server. The form can be submitted with the button RUN. The website was built with the Python web framework - Flask, and the image processing was done with NumPy and Pillow. The styling was done with HTML, CSS, JavaScript, and Bootstrap 5.3. This project is a great example of how to connect a data science task like image processing with a web framework like Flask.
 Other features:</br>
 - customized error messages were implemented to improve the user experience.</br>
-- customised error handling-401-Unauthorized.</br>
+- customised error handling-401-Unauthorized.</br> 
 - customised error handling-403-page Forbidden.</br>
 - customised error handling-404-page not found.</br>
 - customised error handling-405 Method Not Allowed</br>
