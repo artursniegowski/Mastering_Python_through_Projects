@@ -6,7 +6,7 @@ Other features:</br>
 - customised error handling-401-Unauthorized.</br> 
 - customised error handling-403-page Forbidden.</br>
 - customised error handling-404-page not found.</br>
-- customised error handling-405 Method Not Allowed</br>
+- customised error handling-405 Method Not Allowed</br> 
 - mobile responsive with an adaptive nav bar</br>
 - using Jinja2 templating</br>
 - image processing using NumPy for identifying the most common colors in the picture</br>
