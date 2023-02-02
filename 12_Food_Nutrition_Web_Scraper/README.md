@@ -1,7 +1,7 @@
 # 12_Food_Nutrition_Web_Scraper
 This is a web scraping program, that will scrape the nutrition data of the given food and later save the data into a csv file. The website that will be scanned is https://www.nutritionvalue.org/ , this will be used as our reference. The user will have to type which food he wants the data for, like: carrots, apples, beef, or so on. Each food item will be typed individually, and the user will have the option to quit the program at any time by typing "q". After the program receives this instruction, all the nutrition data scraped that the user requested will be stored in output/food_nutrition_out.csv . The console will also display messages while extracting and saving data to inform the user of what is happening or whether an error occurred during this process. This program uses Python's BeautifulSoup library to scrape data. It was developed according to object-oriented methodology, and it could be easily incorporated into any project or scaled up with more functions.
 
-
+ 
 ---
 
 
