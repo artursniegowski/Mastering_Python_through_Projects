@@ -9,7 +9,7 @@ Useful Links:</br>
 
 BeautifulSoup</br>
 https://pypi.org/project/beautifulsoup4/</br>
-https://www.crummy.com/software/BeautifulSoup/bs4/doc/</br>
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/</br> 
 
 requests</br> 
 https://pypi.org/project/requests/</br>
