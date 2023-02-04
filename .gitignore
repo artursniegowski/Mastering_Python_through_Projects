@@ -53,4 +53,6 @@ token.txt
 .cache
 
 # selenium - chrom driver
-ChromeDriver_browser/
+*/ChromeDriver_browser/*
+# exception to the rule
+!*/ChromeDriver_browser/.gitkeep
