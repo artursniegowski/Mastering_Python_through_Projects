@@ -207,9 +207,14 @@ class GameBot:
         )
 
     def check_for_obstacles(self) -> None:
-        """checks for obstacles and if necessary perfomr a jump
+        """checks for obstacles and if necessary perfomr a jump 
+        alternatively solution that could be implemented you could use such functions like pyautogui.pixelMatchesColor or pyautogui.pixel(715, 490)[0] == 83 , 
+        where you could check single pixels values, like a line that would start from the middle of the dino and go all the way to the
+        end of playing screen and then you could detect when the pixels change which means there is an obstacle like the cactus,
+        this could be a even faster solutoin since we wouldent match and look for the whole picture but just a line of pixel , so we would check each time maybe 500pixels -
+        this would lead to decreasing the speed to finding obstacles - to implement on a later stage!
         """
-
+        
         if self.dino_end_pos:
             # using the pyautogui.locateOnScreen is quiet slow this is why i choose to use openCV which is faster 
             # locateAllOnScreen
