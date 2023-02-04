@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}401 - Unauthorized{% endblock %}
+
+{% block content %}
+<div class="container-fluid text-center error-page">
+    <h1 class="error-page-header">401</h1>
+    <h1 class="error-page-header">Unauthorized</h1>
+    <p class="px-5 mx-5">
+        The server could not verify that you are authorized to access the URL requested. 
+        You either supplied the wrong credentials (e.g. a bad password), 
+        or your browser doesn't understand how to supply the credentials required.
+    </p>
+</div>
+{% endblock %}

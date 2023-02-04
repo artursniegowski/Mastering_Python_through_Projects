@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    {% for message in messages %}
+        <p class="d-flex justify-content-center pt-1 flash-message">{{ message }}</p>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="container p-5 text-center">
+    <div class="row justify-content-center g-5">
+        {% for cafe in cafes %}
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card w-100">
+                    <img src="{{cafe.img_url}}" class="card-img-top" height="200" width="100" alt="image-cafe">
+                    <div class="card-body">
+                        <h5 class="card-title">{{cafe.name}}</h5>
+                        <p class="card-text">{{cafe.location}}</p>
+                        <p class="card-text">Added by: 
+                            <span class="fw-bold">
+                                {{cafe.cafe_creator.username}}
+                            </span>
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">WIFI: {% if cafe.has_wifi %}✔{% else %}❌{% endif %}</li>
+                        <li class="list-group-item">SOCKETS: {% if cafe.has_sockets %}✔{% else %}❌{% endif %}</li>
+                        <li class="list-group-item">TOILETS: {% if cafe.has_toilet %}✔{% else %}❌{% endif %}</li>
+                        <li class="list-group-item">PHONE: {% if cafe.can_take_calls %}✔{% else %}❌{% endif %}</li>
+                        <li class="list-group-item">SEATING: {{cafe.seats}}</li>
+                        <li class="list-group-item">PRICE: {{cafe.coffee_price}}</li>
+                    </ul>
+                    <div class="card-body">
+                        <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token() }}"/>
+                        <a href="{{cafe.map_url}}" class="card-link">Map link</a>
+                    <a href="" 
+                        id='jsCafeDelete'
+                        data-delete-url={{url_for('delete_cafe',cafe_name=cafe.name)}}  
+                        class={% if current_user.is_authenticated %}"card-link link-danger"{% else %}"card-link link-danger d-none"{% endif %}>
+                        Delete
+                    </a>
+                    </div>
+                </div>
+            </div>
+    {% else %}
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <h1>
+                <a href="{{ url_for('add_cafe')}}">ADD THE FIRST CAFE TO THE WEBSITE!</a>
+            </h1> 
+        </div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid text-center px-5">
+   <div class="row">
+      <div class="col">
+         <h2 class="add-margin-round-20">{{current_list.title}}</h2>
+      </div>
+   </div>
+   
+   <form method="POST">
+      {{ form.csrf_token }}
+      <div class="row">
+          <div class="col-12 col-sm">
+              {{ form.task_name }} 
+              {% for error in form.task_name.errors %}
+                <div class="invalid-feedback-form text-start">
+                   {{ error }}
+                </div>
+              {% endfor %}
+          </div>
+          <div class="col-auto">
+            {{form.submit}}
+         </div>
+      </div>
+  </form>
+
+   <hr>
+   <div class="card">
+      <ul class="list-group list-group-flush card-todo-list ">
+         {% for task in current_list.tasks %}
+            {% include "includes/task_element.html" %}
+         {% else %}
+            <div class="card-backgroud-color text-center">
+               CREATE YOUR FIRST TASK
+            </div>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+{% endblock %}

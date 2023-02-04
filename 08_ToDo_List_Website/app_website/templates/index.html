@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid px-4 text-center">
+    <div>
+        <h2 class="hero-title">ToDo List</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-4 hero-text-decoration">
+            <p class="hero-text">
+                To-do lists offer a way to increase productivity by stopping you 
+                from forgetting things, helping you prioritize tasks, managing 
+                tasks effectively, using your time wisely, and improving 
+                time management as well as workflow.
+            </p>
+            <a type="button" href="{{ url_for('mylists') }}" class="btn btn-success btn-lg button-hero-section">Start</a>
+            {% if not current_user.is_authenticated %}
+                <p class="hero-help-text">Log in to create, save, and access your lists.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

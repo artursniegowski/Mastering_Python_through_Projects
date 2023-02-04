@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid text-center px-5">
+   <div class="row">
+      <div class="col-md-4">
+         <h2 class="add-margin-round-20">My ToDo Lists</h2>
+      </div>
+      <div class="col-md-4 ms-auto">
+         <a type="button" href="{{ url_for('create_list') }}" class="btn btn-success btn-size-adjust add-margin-round-20">Create a new list</a>
+      </div>
+   </div>
+   <hr>
+   <div class="card">
+      <ul class="list-group list-group-flush card-todo-list">
+         {% for todo_list in current_user.todo_lists %}
+            {% include "includes/list_element.html" %}
+         {% else %}
+            <div class="card-backgroud-color text-center">
+               CREATE YOUR FIRST LIST
+            </div>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+{% endblock %}
