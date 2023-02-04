@@ -49,7 +49,7 @@ The necessary steps to make the program work:</br>
 ***Example view of the bot playing the google game - Dino:***</br>
 
 
-![Screenshot](docs/img/1_img.png)
+![Screenshot](docs/img/01_img.png)
 
 
 ![Screenshot](docs/img/02_img.png)
