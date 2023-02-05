@@ -5,7 +5,7 @@ For finding the dinosaur on the website, the pyautogui library was used since th
 
 
 ---
-
+ 
 
 Useful Links:</br>
 
