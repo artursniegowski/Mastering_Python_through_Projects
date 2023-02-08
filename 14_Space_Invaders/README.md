@@ -11,7 +11,7 @@ Necessary steps to make the program work:</br>
 *pip install -r requirements.txt*</br>
 3. Execute main.py to run the game. Hit the ESC keyboard to exit.</br>
 
-
+ 
 ---
  
 
