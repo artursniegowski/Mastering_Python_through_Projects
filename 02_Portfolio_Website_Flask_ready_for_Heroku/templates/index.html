@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='assets/img/personal_photo.png') }}" alt="avatar" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Artur Sniegowski</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Python / Back-end / Full-stack developer</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Morse Code Converter
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/01_Morse_Code_Converter_picture.png') }}" alt="01_Morse_Code_Converter_picture" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Blog website - Flask - Heroku ready
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/02_Blog_website_Flask_Hero_read.png') }}" alt="02_Blog_website_Flask_Hero_read_picture" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Moviebrowser app - React
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/03_Moviebrowser_app_React.png') }}" alt="03_Moviebrowser_app_React_picture" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Posts Website - Django
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/04_Posts_web_Django.png') }}" alt="04_Posts_web_Django_picture" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Financial Blog - Wagtail - CMS
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/05_Financial_Blog_Wagtail_CMS.png') }}" alt="05_Financial_Blog_Wagtail_CMS" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4 mb-6">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Alien Invasion - Pygame
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/06_Alien_Invasion.png') }}" alt="06_Alien_Invasion" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 7-->
+                <div class="col-md-6 col-lg-4 mb-6">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Automated Spotify playlist generator - Python
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/07_Spotify_playlist_generator.png') }}" alt="07_Spotify_playlist_generator" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 8-->
+                <div class="col-md-6 col-lg-4 mb-6">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                RESTful API - CAFE-Info - Flask
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/08_RESTful_API_CAFE_Info.png') }}" alt="08_RESTful_API_CAFE_Info" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 9-->
+                <div class="col-md-6 col-lg-4 mb-6">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                                Portfolio Website - Flask - Heroku ready
+                            </div>
+                        </div>
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='assets/img/portfolio/09_portfolio_website.png') }}" alt="09_portfolio_website" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">
+                        I've a Master of Science in Control Engineering, and I'm a Python / Back-end / Full-stack developer 👨‍💻.
+                        I'm passionate about technology, innovation and always open for a new challenge.<br>
+                        Don't hesitate to get In touch If you have an interesting 
+                        project related to Python / Back-End / Full Stack development.
+                    </p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">
+                        I'm a Python developer that can design, code, and deploy development projects in the Python language. 
+                        I can also work on debugging those same projects to ensure they function as intended. 
+                    </p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href={{ social_media_link.linkedin }}>
+                    Learn More about Me!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form org-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactFormPortfolio" method="POST" action="#contact" data-contact-url={{ get_contact_url|tojson }}>
+                        {{ contact_form.csrf_token }}
+                        
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            {{ contact_form.name }} 
+                            {{ contact_form.name.label }}
+                            {% for error in contact_form.name.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                         <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            {{ contact_form.email }} 
+                            {{ contact_form.email.label }}
+                            {% for error in contact_form.email.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            {{ contact_form.phone }} 
+                            {{ contact_form.phone.label }}
+                            {% for error in contact_form.phone.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            {{ contact_form.message }} 
+                            {{ contact_form.message.label }}
+                            {% for error in contact_form.message.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitPortfolioSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder text-success">Form submission successful!</div>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submiPortfoliotErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+{% endblock content %}

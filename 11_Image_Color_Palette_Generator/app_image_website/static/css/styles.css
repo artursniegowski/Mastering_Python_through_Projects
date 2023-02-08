@@ -1,0 +1,79 @@
+/* general */
+:root {
+    --bs-white: #fff;
+    --bs-grey: #868681;
+    --bs-dark-background: #1A120B;
+    --bs-ligth-background: #E5E5CB;
+    --bs-text-color-base: #D5CEA3;
+    --bs-text-color-dark: #3C2A21;
+    --bs-red: #fb3e51;
+}
+body {
+    font-family:'Montserrat', sans-serif;
+}
+/* Sections */
+/* header section */
+.header-top-padding {
+    padding: 0 5%;
+}
+.header-top {
+    color: var(--bs-text-color-base);
+    background-color: var(--bs-dark-background);
+    padding: 1% 0;
+}
+.logo-image{
+    filter: brightness(1) invert(1);
+}
+/* main content */
+.main-content{
+    padding: 30px 0;
+    min-height: 90vh;
+    color: var( --bs-text-color-dark);
+    background-color: var(--bs-ligth-background);
+}
+.card-background {
+    background-color: var(--bs-white);
+}
+.card {
+    max-width: 45vw;
+    border-width: 2vw ;
+    border-color: var(--bs-white);
+}
+/* footer section*/
+.footer-bottom{
+    text-align: center;
+    color: var(--bs-white);
+    background-color: var(--bs-dark-background);
+    padding: 20px 0;
+}
+/* footer extra classes */
+.footer-text{
+    font-size: 0.675rem;
+    padding-top: 5px;
+    margin: 0;
+}
+.footer-image {
+    padding: 5px;
+    color: var(--bs-white);
+}
+.footer-image:hover{
+    color: var(--bs-grey);
+}
+/* more specific */
+/* error page */
+.error-page-header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+.error-page{
+    padding-top: 100px;
+}
+/* error feedback form */
+.invalid-feedback-form{
+    width: 100%; 
+    font-weight: bold;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--bs-red);
+}

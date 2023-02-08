@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}{{super()}} - Register{% endblock %}
+
+{% block content %}
+<div class="bg-dark d-flex justify-content-center py-4 px-2 m-0">
+    <h3 class="text-white text-center">
+        CREATE AN ACCOUNT
+    </h3>
+</div>
+<div class="container">
+    <div class="mx-auto">
+        <p class="d-flex justify-content-center pt-5 px-2 fw-semibold">
+            Enter all fields to complete the registration.
+        </p>
+        <p class="d-flex justify-content-center px-2 fw-semibold">
+            Only registered users can add a Café.
+        </p>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="d-flex justify-content-center pt-1 flash-message">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="d-flex justify-content-center pt-2 ">
+            <form method="POST">
+                {{ form.csrf_token }}
+                
+                <div class="row mb-3">
+                    {{ form.username.label(class_='col-form-label') }}
+                    <div class="col-12">
+                        {{ form.username }} 
+                    </div>
+                    {% for error in form.username.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row mb-3">
+                    {{ form.email.label(class_='col-form-label') }}
+                    <div class="col-12">
+                        {{ form.email }} 
+                    </div>
+                    {% for error in form.email.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row mb-3">
+                    {{ form.password.label(class_='col-form-label') }}
+                    <div class="col-12">
+                        {{ form.password }} 
+                    </div>
+                    {% for error in form.password.errors %}
+                    <div class="invalid-feedback-form">
+                        {{ error }}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                {{form.submit}}
+                <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+            </form>
+        </div>
+        <div class="d-flex justify-content-center pt-4 px-2">
+            <span class="fw-light ">
+                Already have an account? <a href="{{ url_for('login')}}" class="text-decoration-none fw-semibold">LogIn</a>
+            </span> 
+        </div>
+    </div>
+</div>
+{% endblock %}
