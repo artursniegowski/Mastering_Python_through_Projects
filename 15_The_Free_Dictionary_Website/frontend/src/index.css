@@ -1,0 +1,39 @@
+:root {
+  --main-color-dark: #1B262C;
+  --main-color-dark-blue: #0F4C75;
+  --main-color-ligth-blue: #3282B8;
+  --backgroud-color-all: #BBE1FA;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--backgroud-color-all);
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+}
+
+footer {
+  font-size: large;
+  border-top: 1px solid #353945;
+  color: #353945;
+  background-color: var(--main-color-ligth-blue);
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.main-content {
+  min-height : 100vh;
+}

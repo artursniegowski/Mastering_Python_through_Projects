@@ -1,0 +1,38 @@
+.my-header {
+    background-color: var(--main-color-ligth-blue) !important;
+    color: var(--main-color-dark) !important;
+}
+
+.link-header {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px ;
+}
+
+.card-element-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.serach-results{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.card-element {
+    margin: 1.25rem;
+    padding: 2px;
+}
+
+.input-search-box {
+    font-size: 50px;
+}
