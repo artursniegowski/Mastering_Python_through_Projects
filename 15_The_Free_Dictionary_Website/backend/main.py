@@ -21,4 +21,4 @@ if __name__ == "__main__":
     # Setting host='0.0.0.0' will make Flask available from the network)
     # Bind to PORT if defined, otherwise default to 5000.
     # TODO: set debug back to False before production!!!
-    app.run(host='0.0.0.0', port=FLASK_PORT, debug=True)
+    app.run(host='0.0.0.0', port=FLASK_PORT, debug=False)
