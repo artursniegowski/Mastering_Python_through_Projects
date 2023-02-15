@@ -1,7 +1,7 @@
 # 15_The_Free_Dictionary_Website
 This is a free dictionary website powered by the public Owlbot Dictionary API (https://owlbot.info). The user can type a word, and this word will be searched for in an English dictionary. The results will be retrieved from the API and presented to the user. This website has a backend that was developed with the Python 3.11 library Flask. The backend is responsible for communicating with the third party API and retrieving the data in an easy-to-use way. The front end was developed with React.js to build an interactive user interface. On top of that, the Material-UI and  Material-icons packages were installed and used various predesigned React components. If the word cannot be found, relevant information pointing to a "Not Found" error will be displayed. Otherwise, the user will get a list of card elements, including emoji, pictures, definitions, examples of use, and the type of word to search for. This is a perfect example of a full-stack web application combining Flask (Python) and React.js (JavaScript) to build scalable and easy-to-maintain websites.
  
- 
+  
 ---
 
 Useful Links:</br>
