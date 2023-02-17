@@ -17,7 +17,7 @@ Flask</br>
 https://flask.palletsprojects.com/en/2.2.x/</br>  
 
 Environmental variables</br>
-https://pypi.org/project/python-dotenv/</br>
+https://pypi.org/project/python-dotenv/</br> 
 
 Python - requests</br>
 https://requests.readthedocs.io/en/latest/</br>
