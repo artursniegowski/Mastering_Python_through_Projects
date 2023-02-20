@@ -6,7 +6,7 @@ Space Invaders (https://en.wikipedia.org/wiki/Space_Invaders) is a 2D video game
 
 
 Necessary steps to make the program work:</br>
-1. Install the Python version as stated in runtime.txt (python-3.11.0)</br>
+1. Install the Python version as stated in runtime.txt (python-3.11.0)</br> 
 2. Install the required libraries from the requirements.txt using the following command: </br>
 *pip install -r requirements.txt*</br>
 3. Execute main.py to run the game. Hit the ESC keyboard to exit.</br>
