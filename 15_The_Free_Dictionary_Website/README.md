@@ -5,7 +5,7 @@ This is a free dictionary website powered by the public Owlbot Dictionary API (h
 --- 
  
 Useful Links:</br>
-
+ 
  
 Owlbot Dictionary API</br>
 https://owlbot.info</br>
