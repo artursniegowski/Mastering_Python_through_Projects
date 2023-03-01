@@ -15,10 +15,10 @@ if __name__ == "__main__":
     # setting the env variable FLASK_APP
     os.environ["FLASK_APP"] = "main"
 
-    # > flask run
+    # > flask run 
     # start server
     # in a debug mode not suitable for production !!
     # Setting host='0.0.0.0' will make Flask available from the network)
     # Bind to PORT if defined, otherwise default to 5000.
-    # TODO: set debug back to False before production!!!
+    # TODO: set debug back to False before production!!!!
     app.run(host='0.0.0.0', port=FLASK_PORT, debug=False)
