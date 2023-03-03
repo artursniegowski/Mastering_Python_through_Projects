@@ -54,7 +54,7 @@ def check_events(read_write_game_stats : read_write_game, \
             check_events_keydown(event, my_settings, screen, space_ship, \
                 rockets)
         
-        # Start button
+        # Start button for the game
         elif event.type == pygame.MOUSEBUTTONDOWN:
             (mouse_x, mouse_y) = pygame.mouse.get_pos()
             check_in_range_start_button(read_write_game_stats,display_scores,\
