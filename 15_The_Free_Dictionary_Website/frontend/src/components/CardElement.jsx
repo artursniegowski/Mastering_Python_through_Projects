@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 function CardElement(props) {
 
-    return (
+    return ( 
         <Card sx={{ maxWidth: 300 }} className="card-element">
             {props.data.image_url && 
             <CardMedia
