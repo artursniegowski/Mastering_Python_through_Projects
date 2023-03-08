@@ -26,7 +26,7 @@ class OwlData:
         """
         assert isinstance(search_word,str), "Error: search_word has to be a string"
         assert len(search_word.strip())>1, "Error: search_word cant be an empty string"
-
+ 
         # adjusting the endpoint for thw search word
         self.search_endpoint = self.endpoint_for_dictionary + search_word
 
@@ -57,7 +57,7 @@ class OwlData:
             error_message = None
 
         # return data
-        if response.status_code == 200:
+        if response.status_code == 200: 
             return {
                 'status_code': response.status_code if not error_message else int(error_message[6:9]),
                 'search_word': res.get('word', None),
@@ -80,5 +80,5 @@ class OwlData:
             }
         else: 
             return {
-                'status_code': response.status_code,
+                'status_code':response.status_code,
             }
