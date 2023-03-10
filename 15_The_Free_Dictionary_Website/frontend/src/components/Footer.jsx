@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 
 function Footer() {
-
     // creating a useState hook for the server side year
     const [serverYear, setServerYear] = useState(2022);
 
