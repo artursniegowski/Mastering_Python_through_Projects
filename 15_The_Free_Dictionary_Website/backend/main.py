@@ -1,7 +1,7 @@
 from web_app_dictionary import app
 from env_variables import FLASK_PORT
 
-#### running the website ####
+################## running the website ##############
 # running the app and setting the required env variable as a script
 if __name__ == "__main__":
     # only run if it's not imported
