@@ -4,7 +4,7 @@ from game_timer import TimeOut
 
 # craeting a time out for the game - object
 # mins - is the argument defining how many minutes will the bot play the game !
-game_time = TimeOut(mins=5)
+game_time = TimeOut(mins=3)
 
 # creating the game_bot object
 game_bot = GameBot(CHROME_DRIVER_PATH)
