@@ -10,5 +10,5 @@ ASCI_ART_INTRO = """
 """
 
 message_welcome_01 = "Welcome to the data scraper - food nutrition. Enter the name of food you want to scrape data for."
-message_welcome_02 = "You can always quit by typing 'q'. After you quit the program the extracted data will be saved to a .csv file."
+message_welcome_02 = "You can always quit by typing 'q'. After you quit the program the extracted data will be saved to a .csv file. " 
 message_welcome_03 = "Type the name of food, like: apple, or 'q' for quitting: "
