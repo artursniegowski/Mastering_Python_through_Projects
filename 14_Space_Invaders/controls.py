@@ -23,7 +23,7 @@ class Control:
         self.font = pygame.font.SysFont(None,my_settings.button_text_size)
 
         # Build the buttons react object and center it
-        self.rect = pygame.Rect(0,0,self.width,self.height)
+        self.rect = pygame.Rect(0,0,self.width,self.height) 
         self.rect.center = self.screen_rect.center
 
         #Turn info into a render image and center text on the button"""
