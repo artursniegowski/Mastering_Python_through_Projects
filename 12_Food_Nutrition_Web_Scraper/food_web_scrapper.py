@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 # https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser
 import lxml # for parsing html
-import re
+import re 
 
 class MyHeader:
     """define your header
