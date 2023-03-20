@@ -17,7 +17,7 @@ function Header() {
                             <Link to="/" className='link-header'>
                                 The Free Dictionary
                             </Link>
-                        </Typography>
+                        </Typography> 
                         <Typography variant="h4" sx={{ paddingRight:10, paddingLeft:2 }}>
                             <Link to="/about" className='link-header'>
                                 About
