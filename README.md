@@ -1,4 +1,4 @@
-# Mastering_Python_through_Projects
+# Mastering Python through Projects
 This is a repository of professional projects that can be used as ideas to further your Python skills and master this
 versatile scripting language. The repository will cover a wide range of projects like scripting Python projects (text-based), Web Development (Flask), Data Science (Pandas, Numpy, SciPy), GUI - graphical user interface (Tkinter), APIs (Requests), Games (Turtle, Pygame), Web Scrapping (BeautifulSoup, Selenium), Automating Tasks with Python, and many more.
 
